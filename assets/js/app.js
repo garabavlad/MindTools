@@ -1,3 +1,4 @@
+// filtering internships selection
 
 let items = [
     {
@@ -66,7 +67,7 @@ let items = [
 let container = document.getElementById('container-internship');
 let html = '';
 for (var i=0; i<items.length; i++) {
-    html += '<li class="event-item" data-national="' + items[i].type + '">' +
+    html += '<li class="event-item" data-'+ items[i].type +'="' + items[i].type + '">' +
                 '<div><img class="event-item-photo" src="assets/images/' + items[i].image + '"></div>' +
                 '<span class="clearfix">&nbsp;</span>' +
                 '<div class="event-item-content">' +
@@ -87,10 +88,10 @@ container.innerHTML = html;
 
 
 
-// filtering internships selection
-let eventItems = document.querySelectorAll('.event-item');
- 
+    
+let eventItems = document.querySelectorAll('.event-item'); 
 function national() {
+    console.log("ITEMS ", document.querySelectorAll('.event-item'));
     eventItems.forEach(item => {
         if (item.hasAttribute('data-international')) {
             item.classList.add('hidden');            
