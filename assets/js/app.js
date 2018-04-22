@@ -1,5 +1,4 @@
-// filtering internships selection
-let eventItems = document.querySelectorAll('.event-item');
+
 let items = [
     {
         title : 'Internship Human Resources - Psychology',
@@ -88,7 +87,8 @@ container.innerHTML = html;
 
 
 
-    
+// filtering internships selection
+let eventItems = document.querySelectorAll('.event-item');
  
 function national() {
     eventItems.forEach(item => {
@@ -117,12 +117,4 @@ function openPage() {
     window.open('tobecontinued.html', '_blank');w
 };
 
-//     let applyBtn = document.querySelectorAll('.event-item-button');
-//     console.log(applyBtn);
-
-//     applyBtn.forEach(item => addEventListener('click', function(){
-//         console.log(item);
-//         window.open('tobecontinued.html', '_blank');
-//         })
-//     );
 
