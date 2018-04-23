@@ -1,3 +1,14 @@
+/*stylesheet for following pages:
+
+career-education.html
+internship.html
+mentoring.html
+tobecontinued.html
+volunteer.html
+
+*/
+
+
 body {
     background-color: lightgrey;
 }
@@ -13,7 +24,13 @@ body {
     font-size: 14px;
     margin-bottom: 5px;
 }
-
+.single-address input {
+    margin: 0 5px;
+}
+.radio-occupation input {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
 
 #other{
