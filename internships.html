@@ -73,45 +73,45 @@
             <li><a href="index.html#portfolio">PARTNERS</a></li> 
             <li><a href="blog-archive.html">BLOG</a></li>  
             <li><a href="index.html#contact">CONTACT</a></li>
-            <li><button class="button1" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+            <li><a onclick="document.getElementById('login-form').style.display='block'" style="cursor: pointer;">LOG-IN</a></li>
+            <!-- <li><button class="button1" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li> -->
 
-<!--<div id="login-form" class="login-form-style">-->
-  
-<!--  <form class="login-form-style-content animate form-login" action="profile.html">-->
+            <div id="login-form" class="login-form-style" style="display:none">           
+                <form class="login-form-style-content animate form-login" action="profile.html">
+                    <div class="container">
+                        <label for="uname" ><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
 
-<!--    <div class="container">-->
-<!--      <label for="uname" ><b>Username</b></label>-->
-<!--      <input type="text" placeholder="Enter Username" name="uname" required>-->
+                        <label for="psw" ><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                        <button type="button" onclick="document.getElementById('login-form').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button class="button1" type="submit">Login</button>
 
-<!--      <label for="psw" ><b>Password</b></label>-->
-<!--      <input type="password" placeholder="Enter Password" name="psw" required>-->
-        
-<!--      <button type="button" onclick="document.getElementById('login-form').style.display='none'" class="cancelbtn">Cancel</button>-->
-<!--      <button class="button1" type="submit">Login</button>-->
+                        <label style="display: block;">
+                            <input type="checkbox" checked="checked" name="remember">
+                            Remember me
+                        </label>
+                        
+                        <span class="psw"><a style="padding: 0; text-transform: none;" href="#">Forgot password?</a></span>
+                    </div>
 
-<!--      <label style="display: block;">-->
-<!--      <input type="checkbox" checked="checked" name="remember">-->
+                    <div class="container" style="background-color:#f1f1f1">
+                    </div>
+                </form>
 
-<!--      Remember me</label>-->
-      
-<!--      <span class="psw"><a style="padding: 0; text-transform: none;" href="#">Forgot password?</a></span>-->
-<!--    </div>-->
-
-<!--    <div class="container" style="background-color:#f1f1f1">-->
-<!--    </div>-->
-<!--  </form>-->
-<!--</div>-->
-
-<!--<script>-->
-<!--// Get the modal-->
-<!--var modal = document.getElementById('login-form');-->
-
-<!--window.onclick = function(event) {-->
-<!--    if (event.target == modal) {-->
-<!--        modal.style.display = "none";-->
-<!--    }-->
-<!--}-->
-<!--</script>-->
+                <script>
+                    var modal = document.getElementById('login-form');
+    
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+             
+            
           </ul>                            
         </div><!--/.nav-collapse -->
        <div class="search-area">
@@ -160,16 +160,16 @@
                     </select>
                 </div>
 
-                <div class="form-group event-age">
-                        <span>By domain:</span></br>
-                        <select>
-                            <option>IT</option>
-                            <option>Research</option>
-                            <option>HR</option>
-                            <option>Marketing</option>
-                            <option>Sales</option>
-                        </select>
-                    </div>
+                <div class="form-group event-domain">
+                    <span>By domain:</span></br>
+                    <select>
+                        <option>IT</option>
+                        <option>Research</option>
+                        <option>HR</option>
+                        <option>Marketing</option>
+                        <option>Sales</option>
+                    </select>
+                </div>
 
                 <div class="form-group event-duration">
                     <span>By duration:</span></br>
@@ -195,7 +195,9 @@
   <section class="content" id="container-internship">
       <ul>
 
-          <li class="event-item" data-national="national">
+          <!-- Dinamically generated from "assets/js/app.js" -->
+
+          <!-- <li class="event-item" data-national="national">
               <div>
                 <img class="event-item-photo" src="assets/images/internship1.jpg">
               </div>
@@ -316,7 +318,7 @@
                     <button class="event-item-button" onclick="openPage()">Apply</button>
                 </div>
             </div>
-          </li>
+          </li> -->
 
       </ul>
   </section>

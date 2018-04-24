@@ -68,7 +68,7 @@ let container = document.getElementById('container-internship');
 let html = '';
 for (var i=0; i<items.length; i++) {
     html += '<li class="event-item" data-'+ items[i].type +'="' + items[i].type + '">' +
-                '<div><img class="event-item-photo" src="assets/images/' + items[i].image + '"></div>' +
+                '<div class="event-photo-container"><img class="event-item-photo" src="assets/images/' + items[i].image + '"></div>' +
                 '<span class="clearfix">&nbsp;</span>' +
                 '<div class="event-item-content">' +
                   '<h3 class="event-item-content-heading">' + items[i].title + '</h3>' +
@@ -115,7 +115,7 @@ function international() {
 // open new page on click 'apply' buttons
 
 function openPage() {
-    window.open('tobecontinued.html', '_blank');w
+    window.open('tobecontinued.html', '_blank');
 };
 
 
